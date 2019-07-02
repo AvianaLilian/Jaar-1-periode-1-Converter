@@ -24,6 +24,6 @@ namespace Converter.Converters
         /// Celcius to fahrenheit = x
         /// Fahrenheit to celcius = /
         /// </summary>
-        double celciusTofahrenheit = (... * 1.8) + 32;
+        ///string celciusTofahrenheit = 1.8 + 32;
     }
 }

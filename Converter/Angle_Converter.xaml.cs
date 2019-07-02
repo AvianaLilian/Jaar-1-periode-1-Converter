@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace Converter
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Angle_Converter.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Angle_Converter : Page
     {
-        public MainWindow()
+        public Angle_Converter()
         {
             InitializeComponent();
-            Loaded += MyWindow_Loaded; //Zorgt ervoor dat zodra de window geladen is dat een pagina word geladen
-        }
-
-        private void MyWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            frame.NavigationService.Navigate(new HomePage()); //Zet de Homepage in de main frame
         }
     }
 }
