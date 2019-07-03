@@ -5,10 +5,97 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Converter"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="500" d:DesignWidth="850"
       Title="Hexadecimal_Converter">
 
-    <Grid>
-        
+    <Grid Background="#2fc2df">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <!--<Grid Name="Navbar_Grid" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="HomeButton_Grid">
+                <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="HomeButton_MouseDown" Margin="0,0,0,10">Home</Button></Grid>
+            <Grid x:Name="LengthButton_Grid" Grid.Column="1">
+                <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="LengthButton_MouseDown" Margin="0,0,0,10">Length</Button></Grid>
+            <Grid x:Name="CurrencyButton_Grid" Grid.Column="2">
+                <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="CurrencyButton_MouseDown" Margin="0,0,0,10">Currency</Button></Grid>
+            <Grid x:Name="HexadecimalButton_Grid" Grid.Column="3">
+                <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="HexadecimalButton_MouseDown" Margin="0,0,0,10">Hexadecimal</Button></Grid>
+            <Grid x:Name="TemperatureButton_Grid" Grid.Column="4">
+                <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="TemperatureButton_MouseDown" Margin="0,0,0,10">Temperature</Button></Grid>
+            <Grid x:Name="WeightButton_Grid" Grid.Column="5">
+                <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="WeightButton_MouseDown" Margin="0,0,0,10">Weight</Button></Grid>
+        </Grid>-->
+        <Grid x:Name="Menu_Place_Grid" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="Menu_Grid" Grid.Row="1" Grid.Column="1" Background="#FFF3AC13">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="Name_Grid">
+                    <TextBlock Text="Angle Converter" TextAlignment="Center" TextBlock.FontWeight="Bold" TextBlock.FontSize="48" TextBlock.FontFamily="Arial" TextBlock.FontStretch="ExtraExpanded" Margin="0,30" Foreground="#f6f5f1"/>
+                </Grid>
+                <Grid x:Name="Converter_Place_Grid" Grid.Row="1" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="Row_Menu_1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="Input_Grid" Margin="8" TextBlock.FontSize="20">
+                            <TextBox TextChanged="TextBox_TextChanged"></TextBox>
+                        </Grid>
+                        <Grid x:Name="Combobox_Input_Grid" Grid.Column="1" Margin="8" TextBlock.FontSize="20">
+                            <ComboBox SelectionChanged="ComboBox_Input" >
+                                <ComboBoxItem Content="Grad"></ComboBoxItem>
+                                <ComboBoxItem Content="Radian"></ComboBoxItem>
+                                <ComboBoxItem Content="Degree"></ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                        <Grid x:Name="Result_Grid" Grid.Column="2" Margin="8" TextBlock.FontSize="20">
+                            <TextBox></TextBox>
+                        </Grid>
+                        <Grid x:Name="Combobox_Result_Grid" Grid.Column="3" Margin="8" TextBlock.FontSize="20">
+                            <ComboBox SelectionChanged="ComboBox_Result">
+                                <ComboBoxItem Content="Grad"></ComboBoxItem>
+                                <ComboBoxItem Content="Radian"></ComboBoxItem>
+                                <ComboBoxItem Content="Degree"></ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                    </Grid>
+                    <Grid x:Name="Row_Menu_2" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="4.5*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="4.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="Button_Grid" Grid.Column="1" Margin="8">
+                            <Button Background="#7ad8eb" Foreground="White" BorderThickness="0" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDoubleClick="Button_MouseDoubleClick">Convert</Button>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>

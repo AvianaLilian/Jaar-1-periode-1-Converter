@@ -28,7 +28,31 @@ namespace Converter
 
         private void MyWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            frame.NavigationService.Navigate(new HomePage()); //Zet de Homepage in de main frame
+            Frame.NavigationService.Navigate(new HomePage()); //Zet de Homepage in de main frame
+        }
+        private void BtnClickAngle(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Angle_Converter();
+        }
+        private void BtnClickLength(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Length_Converter();
+        }
+        private void BtnClickCurrency(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Currency_Converter();
+        }
+        private void BtnClickHexadecimal(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Hexadecimal_Converter();
+        }
+        private void BtnClickTemperature(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Temperature_Converter();
+        }
+        private void BtnClickWeight(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Weight_Converter();
         }
     }
 }

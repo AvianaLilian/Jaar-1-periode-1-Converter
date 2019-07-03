@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Converter"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="MainWindow" Height="675" Width="1200">
+      d:DesignHeight="500" d:DesignWidth="850"
+      Title="Currency_Converter">
 
     <Grid Background="#2fc2df">
         <Grid.RowDefinitions>
@@ -14,7 +14,7 @@
             <RowDefinition Height="7*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Grid Name="Navbar_Grid" Grid.Row="0">
+        <!--<Grid Name="Navbar_Grid" Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -40,8 +40,8 @@
             </Grid>
             <Grid x:Name="WeightButton_Grid" Grid.Column="5">
                 <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="WeightButton_MouseDown" Margin="0,0,0,10">Weight</Button>
-            </Grid>
-        </Grid>
+            </Grid>-->
+        <!--</Grid>-->
         <Grid x:Name="Menu_Place_Grid" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -55,7 +55,7 @@
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
                 <Grid x:Name="Name_Grid">
-                    <TextBlock Text="Currency Converter" TextAlignment="Center" TextBlock.FontWeight="Bold" TextBlock.FontSize="48" TextBlock.FontFamily="Arial" TextBlock.FontStretch="ExtraExpanded" Margin="0,30" Foreground="#f6f5f1"/>
+                    <TextBlock Text="Currency Converter" TextAlignment="Center" TextBlock.FontWeight="Bold" TextBlock.FontSize="48" TextBlock.FontFamily="Arial" TextBlock.FontStretch="ExtraExpanded" Margin="0,15" Foreground="#f6f5f1"/>
                 </Grid>
                 <Grid x:Name="Converter_Place_Grid" Grid.Row="1" Grid.Column="1">
                     <Grid.RowDefinitions>
@@ -71,7 +71,7 @@
                             <ColumnDefinition Width="3*"/>
                         </Grid.ColumnDefinitions>
                         <Grid x:Name="Input_Grid" Margin="8" TextBlock.FontSize="20">
-                            <TextBox x:Name="Input_Field"></TextBox>
+                            <TextBox x:Name="Input_Field" PreviewTextInput="NumberValidation"></TextBox>
                         </Grid>
                         <Grid x:Name="Combobox_Input_Grid" Grid.Column="1" Margin="8" TextBlock.FontSize="20">
                             <ComboBox SelectionChanged="ComboBox_Input">
@@ -87,11 +87,11 @@
                         </Grid>
                         <Grid x:Name="Combobox_Result_Grid" Grid.Column="3" Margin="8" TextBlock.FontSize="20">
                             <ComboBox x:Name="ComboBoxResult" SelectionChanged="ComboBox_Result">
-                                <ComboBoxItem Content="Euro"></ComboBoxItem>
-                                <ComboBoxItem Content="US Dollar"></ComboBoxItem>
-                                <ComboBoxItem Content="British Pound"></ComboBoxItem>
-                                <ComboBoxItem Content="Canadian Dollar"></ComboBoxItem>
-                                <ComboBoxItem Content="Australian Dollar"></ComboBoxItem>
+                                <ComboBoxItem Content="Euro" IsSelected="True"></ComboBoxItem>
+                                <ComboBoxItem Content="US Dollar" IsSelected="False"></ComboBoxItem>
+                                <ComboBoxItem Content="British Pound" IsSelected="False"></ComboBoxItem>
+                                <ComboBoxItem Content="Canadian Dollar" IsSelected="False"></ComboBoxItem>
+                                <ComboBoxItem Content="Australian Dollar" IsSelected="False"></ComboBoxItem>
                             </ComboBox>
                         </Grid>
                     </Grid>

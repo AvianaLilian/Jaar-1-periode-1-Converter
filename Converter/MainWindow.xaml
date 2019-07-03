@@ -7,15 +7,48 @@
         mc:Ignorable="d"
         Name="Converter"
         ResizeMode="CanMinimize"
-        Title="Memory Game" Height="500" Width="850"
-SizeToContent="WidthAndHeight">
+        Title="MainWindow" Height="500" Width="850">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Frame x:Name="frame" Content="Frame" Grid.Column="1" Grid.Row="1" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" NavigationUIVisibility="Hidden"></Frame>
+        <!--<StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
+            <Button Content="Angle" Click="BtnClickAngle" MinWidth="130" Margin="8,0,0,0"></Button>
+            <Button Content="Length" Click="BtnClickLength" MinWidth="130" Margin="10,0,0,0"></Button>
+            <Button Content="Currency" Click="BtnClickCurrency" MinWidth="130" Margin="10,0,0,0"></Button>
+            <Button Content="Hexadecimal" Click="BtnClickHexadecimal" MinWidth="130" Margin="10,0,0,0"></Button>
+            <Button Content="Temperature" Click="BtnClickTemperature" MinWidth="130" Margin="10,0,0,0"></Button>
+            <Button Content="Weight" Click="BtnClickWeight" MinWidth="130" Margin="10,0,0,0"></Button>
+        </StackPanel>-->        
+            <Grid Name="Navbar_Grid" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="AngleButton_Grid">
+                <Button Content="Angle" Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" Click="BtnClickAngle" Margin="0,0,0,10"/>
+            </Grid>
+                <Grid x:Name="LengthButton_Grid" Grid.Column="1">
+                    <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" Click="BtnClickLength" Margin="0,0,0,10">Length</Button>
+                </Grid>
+                <Grid x:Name="CurrencyButton_Grid" Grid.Column="2">
+                    <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" Click="BtnClickCurrency" Margin="0,0,0,10">Currency</Button>
+                </Grid>
+                <Grid x:Name="HexadecimalButton_Grid" Grid.Column="3">
+                    <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" Click="BtnClickHexadecimal" Margin="0,0,0,10">Hexadecimal</Button>
+                </Grid>
+                <Grid x:Name="TemperatureButton_Grid" Grid.Column="4">
+                    <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" Click="BtnClickTemperature" Margin="0,0,0,10">Temperature</Button>
+                </Grid>
+            <Grid x:Name="WeightButton_Grid" Grid.Column="5">
+                <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" Click="BtnClickWeight" Margin="0,0,0,10">Weight</Button>
+            </Grid>
+        </Grid>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

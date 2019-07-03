@@ -14,7 +14,7 @@
             <RowDefinition Height="7*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Grid Name="Navbar_Grid" Grid.Row="0">
+        <!--<Grid Name="Navbar_Grid" Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -41,7 +41,7 @@
             <Grid x:Name="WeightButton_Grid" Grid.Column="5">
                 <Button Background="#7ad8eb" Foreground="White" BorderThickness="0, 0, 0, 3" BorderBrush="#f4cf5d" TextBlock.FontWeight="Bold" TextBlock.FontSize="20" MouseDown="WeightButton_MouseDown" Margin="0,0,0,10">Weight</Button>
             </Grid>
-        </Grid>
+        </Grid>-->
         <Grid x:Name="Menu_Place_Grid" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>

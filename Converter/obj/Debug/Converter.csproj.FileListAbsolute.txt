@@ -9,3 +9,4 @@ C:\Users\amhen\Documents\GitHub\Jaar-1-periode-1-Converter\Converter\obj\Debug\W
 C:\Users\amhen\Documents\GitHub\Jaar-1-periode-1-Converter\Converter\obj\Debug\App.g.cs
 C:\Users\amhen\Documents\GitHub\Jaar-1-periode-1-Converter\Converter\obj\Debug\Converter_MarkupCompile.cache
 C:\Users\amhen\Documents\GitHub\Jaar-1-periode-1-Converter\Converter\obj\Debug\Converter_MarkupCompile.lref
+C:\Users\amhen\Documents\GitHub\Jaar-1-periode-1-Converter\Converter\obj\Debug\Converter.csprojAssemblyReference.cache

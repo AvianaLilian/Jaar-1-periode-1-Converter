@@ -32,47 +32,47 @@ namespace Converter
 
         private void HomeButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new HomePage());
         }
 
         private void LengthButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Length_Converter());
         }
 
         private void CurrencyButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Currency_Converter());
         }
 
         private void HexadecimalButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Hexadecimal_Converter());
         }
 
         private void TemperatureButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Temperature_Converter());
         }
 
         private void WeightButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Weight_Converter());
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            //Komt later
         }
 
         private void ComboBox_Input(object sender, SelectionChangedEventArgs e)
         {
-
+//komt later            
         }
 
         private void ComboBox_Result(object sender, SelectionChangedEventArgs e)
         {
-
+//Komt Later
         }
     }
 }
