@@ -24,5 +24,40 @@ namespace Converter
         {
             InitializeComponent();
         }
+
+        private void Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void HomeButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void LengthButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void CurrencyButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void HexadecimalButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void TemperatureButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void WeightButton_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
