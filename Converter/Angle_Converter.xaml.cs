@@ -59,5 +59,20 @@ namespace Converter
         {
 
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox_Input(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox_Result(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

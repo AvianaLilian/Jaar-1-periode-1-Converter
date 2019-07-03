@@ -64,9 +64,9 @@
                             <ColumnDefinition Width="3*"/>
                         </Grid.ColumnDefinitions>
                         <Grid x:Name="Input_Grid" Margin="8" TextBlock.FontSize="20">
-                            <TextBox></TextBox></Grid>
+                            <TextBox TextChanged="TextBox_TextChanged"></TextBox></Grid>
                         <Grid x:Name="Combobox_Input_Grid" Grid.Column="1" Margin="8" TextBlock.FontSize="20">
-                            <ComboBox>
+                            <ComboBox SelectionChanged="ComboBox_Input" >
                                 <ComboBoxItem Content="Grad"></ComboBoxItem>
                                 <ComboBoxItem Content="Radian"></ComboBoxItem>
                                 <ComboBoxItem Content="Degree"></ComboBoxItem>                                
@@ -75,7 +75,7 @@
                             <TextBox></TextBox>
                         </Grid>
                         <Grid x:Name="Combobox_Result_Grid" Grid.Column="3" Margin="8" TextBlock.FontSize="20">
-                            <ComboBox>
+                            <ComboBox SelectionChanged="ComboBox_Result">
                                 <ComboBoxItem Content="Grad"></ComboBoxItem>
                                 <ComboBoxItem Content="Radian"></ComboBoxItem>
                                 <ComboBoxItem Content="Degree"></ComboBoxItem>

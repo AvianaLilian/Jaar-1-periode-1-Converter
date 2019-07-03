@@ -71,22 +71,22 @@
                             <ColumnDefinition Width="3*"/>
                         </Grid.ColumnDefinitions>
                         <Grid x:Name="Input_Grid" Margin="8" TextBlock.FontSize="20">
-                            <TextBox></TextBox>
+                            <TextBox x:Name="Input_Field"></TextBox>
                         </Grid>
                         <Grid x:Name="Combobox_Input_Grid" Grid.Column="1" Margin="8" TextBlock.FontSize="20">
-                            <ComboBox>
-                                <ComboBoxItem Content="Euro"></ComboBoxItem>
-                                <ComboBoxItem Content="US Dollar"></ComboBoxItem>
-                                <ComboBoxItem Content="British Pound"></ComboBoxItem>
-                                <ComboBoxItem Content="Canadian Dollar"></ComboBoxItem>
-                                <ComboBoxItem Content="Australian Dollar"></ComboBoxItem>
+                            <ComboBox SelectionChanged="ComboBox_Input">
+                                <ComboBoxItem Content="Euro" IsSelected="true"></ComboBoxItem>
+                                <ComboBoxItem Content="US Dollar" IsSelected="false"></ComboBoxItem>
+                                <ComboBoxItem Content="British Pound" IsSelected="false"></ComboBoxItem>
+                                <ComboBoxItem Content="Canadian Dollar" IsSelected="false"></ComboBoxItem>
+                                <ComboBoxItem Content="Australian Dollar" IsSelected="false"></ComboBoxItem>
                             </ComboBox>
                         </Grid>
                         <Grid x:Name="Result_Grid" Grid.Column="2" Margin="8" TextBlock.FontSize="20">
-                            <TextBox></TextBox>
+                            <TextBox x:Name="Result_Field"></TextBox>
                         </Grid>
                         <Grid x:Name="Combobox_Result_Grid" Grid.Column="3" Margin="8" TextBlock.FontSize="20">
-                            <ComboBox>
+                            <ComboBox x:Name="ComboBoxResult" SelectionChanged="ComboBox_Result">
                                 <ComboBoxItem Content="Euro"></ComboBoxItem>
                                 <ComboBoxItem Content="US Dollar"></ComboBoxItem>
                                 <ComboBoxItem Content="British Pound"></ComboBoxItem>
@@ -101,8 +101,8 @@
                             <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="4.5*"/>
                         </Grid.ColumnDefinitions>
-                        <Grid x:Name="Value_Grid" Grid.Column="1">
-                            <TextBox></TextBox>
+                         <Grid x:Name="Value_Grid" Grid.Column="1">
+                            <TextBox x:Name="Field_Value" Tag="Value"></TextBox>
                         </Grid>
                     </Grid>
                     <Grid x:Name="Row_Menu_3" Grid.Row="2">

@@ -72,8 +72,8 @@
                         <Grid x:Name="Input_Grid" Margin="8" TextBlock.FontSize="20">
                             <TextBox></TextBox>
                         </Grid>
-                        <Grid x:Name="Combobox_Input_Grid" Grid.Column="1" Margin="8" TextBlock.FontSize="20">
-                            <ComboBox SelectionChanged="ComboBox_SelectionChanged_1">
+                        <Grid x:Name="Combobox_Input_Grid" Grid.Column="1" Margin="8" TextBlock.FontSize="20" TextBlock.TextAlignment="Right">
+                            <ComboBox SelectionChanged="ComboBox_Input">
                                 <ComboBoxItem Content="Kilometer" IsSelected="true"></ComboBoxItem>
                                 <ComboBoxItem Content="Meter"></ComboBoxItem>
                                 <ComboBoxItem Content="Milimeter"></ComboBoxItem>
@@ -87,7 +87,7 @@
                             <TextBox></TextBox>
                         </Grid>
                         <Grid x:Name="Combobox_Result_Grid" Grid.Column="3" Margin="8" TextBlock.FontSize="20">
-                            <ComboBox SelectionChanged="ComboBox_SelectionChanged" TextBlock.TextAlignment="Center">
+                            <ComboBox SelectionChanged="ComboBox_Result" TextBlock.TextAlignment="Center">
                                 <ComboBoxItem Content="Kilometer"></ComboBoxItem>
                                 <ComboBoxItem Content="Meter"></ComboBoxItem>
                                 <ComboBoxItem Content="Milimeter"></ComboBoxItem>

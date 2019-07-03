@@ -20,6 +20,10 @@ namespace Converter
     /// </summary>
     public partial class Currency_Converter : Page
     {
+        string koers;
+        string inputField;
+        string resultField;
+
         public Currency_Converter()
         {
             InitializeComponent();
@@ -27,6 +31,30 @@ namespace Converter
 
         private void Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+
+        }
+
+        private void ComboBox_Input(object sender, SelectionChangedEventArgs e)
+        {
+            koers = Field_Value.Text;
+        }
+
+        private void ComboBox_Result(object sender, SelectionChangedEventArgs e)
+        {
+            inputField = Input_Field.Text;
+            //checken wel combobox item is geselecteerd
+            string content = ((ComboBoxItem)ComboBoxResult.SelectedItem).Content as string;
+            if (content != null)
+            {
+                MessageBox.Show(content);
+            }
+
+            resultField = Result_Field.Text;
+            //checken wel combobox item is geselecteerd
+            koers = Field_Value.Text;
+            //checken dat het niet leeg is
+            //2 decimalen
+            //geen text input
 
         }
     }
